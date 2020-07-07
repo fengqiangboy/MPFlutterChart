@@ -115,7 +115,7 @@ class XAxisRenderer extends AxisRenderer {
     } else if (_xAxis.position == XAxisPosition.BOTTOM) {
       pointF.x = 0.5;
       pointF.y = 0.0;
-      drawLabels(c, viewPortHandler.contentBottom(), pointF, _xAxis.position);
+      drawLabels(c, viewPortHandler.contentBottom() + 10, pointF, _xAxis.position);
     } else if (_xAxis.position == XAxisPosition.BOTTOM_INSIDE) {
       pointF.x = 0.5;
       pointF.y = 0.0;
